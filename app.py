@@ -25,13 +25,8 @@ def schedule(cre, ti, stop):
             bal -= cre
     t1.join()                   # Finally, join the thread with the main thread
 
-
-
-
-
+    
 app = Flask(__name__)
-
-
 
 # API for root directory
 @app.route('/',methods=['GET'])
@@ -77,8 +72,7 @@ def cancel():
 @app.route('/add', methods=['POST'])
 def add():
     global bal
-    bal += 100
-
+    bal += 10
 
 
 if __name__=="__main__":
